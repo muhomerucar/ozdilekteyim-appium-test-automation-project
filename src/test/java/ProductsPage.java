@@ -12,6 +12,7 @@ public class ProductsPage extends BasePage{
 
     @Step("Sayfanın aşağısına inilir")
     public void scrollDown(){
+        System.out.println("Mevcut sayfada aşağıya iniliyor...");
         int startx = 540;
         int starty = 1965;
         int endx = 540;
@@ -28,6 +29,7 @@ public class ProductsPage extends BasePage{
         touchAction.longPress(PointOption.point(startx_sec,starty_sec)).
                 moveTo(PointOption.point(endx_sec,endy_sec)).
                 release().perform();
+        logger.info("Mevcut sayfada aşağıya kaydırma işlemi yapıldı.");
     }
 
     @Step("Rastgele bir ürün seçilir")
@@ -36,6 +38,7 @@ public class ProductsPage extends BasePage{
         Random random = new Random();
         int randomValue= random.nextInt(elementList.size());
         elementList.get(randomValue).click();
+        logger.info("Rastgele bir ürüne tıklandı.");
         System.out.println("Rastgele bir ürüne tıklandı.");
     }
 
@@ -45,11 +48,14 @@ public class ProductsPage extends BasePage{
         Random random = new Random();
         int randomSizeValue = random.nextInt(sizeElements.size());
         sizeElements.get(randomSizeValue).click();
-        System.out.println("Rasgele bir ürün bedenine tıklandı.");
+        logger.info("Rastgele bir ürün bedenine tıklandı.");
+        System.out.println("Rastgele bir ürün bedenine tıklandı.");
     }
 
     @Step("<buttonId> butonuna tıklanarak favoriye alınır")
     public void clickFavButton(String buttonId){
+        System.out.println("Favori butonuna tıklandı.");
+        logger.info("Favori butonuna tıklandı.");
         click(By.id(buttonId));
     }
 

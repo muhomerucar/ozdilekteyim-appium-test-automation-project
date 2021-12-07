@@ -8,7 +8,7 @@ import java.util.List;
 
 public class BasePage extends BaseTest{
 
-    final static Logger logger = Logger.getLogger(BasePage.class.getName());
+    final static Logger logger = Logger.getLogger(Logger.class.getName());
 
     public MobileElement find(By locator){
         return appiumDriver.findElement(locator);

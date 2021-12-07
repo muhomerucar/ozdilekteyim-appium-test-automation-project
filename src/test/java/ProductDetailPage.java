@@ -8,6 +8,7 @@ public class ProductDetailPage extends BasePage{
     public void isProductDetailPage(){
         String elementName = find(By.id("com.ozdilek.ozdilekteyim:id/tvItemDescription")).getText();
         System.out.println(elementName + " ürününün detayları görüntülenmekte...");
+        logger.info(elementName + " ürününün detayları görüntülendi.");
         Assert.assertTrue(isDisplayed(By.id("com.ozdilek.ozdilekteyim:id/tvItemDescription")));
     }
 
@@ -15,6 +16,7 @@ public class ProductDetailPage extends BasePage{
     public void addToCart(){
         String productInfo = appiumDriver.findElement(By.id("com.ozdilek.ozdilekteyim:id/tvItemDescription")).getText();
         appiumDriver.findElement(By.id("com.ozdilek.ozdilekteyim:id/relLayAddCartBtn")).click();
-        System.out.println(productInfo + " sepete eklendi.");
+        logger.info(productInfo + " ürünü sepete eklendi.");
+        System.out.println(productInfo + " ürünü sepete eklendi.");
     }
 }

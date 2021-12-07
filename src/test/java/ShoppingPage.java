@@ -15,6 +15,7 @@ public class ShoppingPage extends BasePage{
     public void hasPageOpened(String pageId){
         String element = find(By.id(pageId)).getAttribute("content-desc");
         System.out.println(element + " görüntülendi.");
+        logger.info(element + " görüntülendi.");
         Assert.assertTrue(isDisplayed(By.id(pageId)));
     }
 
