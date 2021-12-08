@@ -39,7 +39,7 @@ public class BaseTest {
             desiredCapabilities
                     .setCapability(MobileCapabilityType.UDID, "00008030-00157936018B802E");
             desiredCapabilities
-                    .setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.pozitron.hepsiburada");
+                    .setCapability(IOSMobileCapabilityType.BUNDLE_ID, "");
             desiredCapabilities
                     .setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone");
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.7.1");

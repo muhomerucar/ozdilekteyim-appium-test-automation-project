@@ -1,5 +1,5 @@
 # Project exclude paths
 /target/
 
-# api.log
-.api.log
+# logs - guage.log can be seen in log/logfile.txt - api.log is too long to share
+/logs/
