@@ -1,2 +1,3 @@
 # ozdilekteyim-appium-test-automation-project
-ozdilekteyim appium automation project
+
+Creating and executing test scenario for Android App through Appium and Gauge
